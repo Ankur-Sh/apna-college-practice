@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <a href="1.html"> home</a>
+    <div class="container">
+      <form action="">
+        <h1 class="main_heading"><u> Registration Form</u></h1>
+        <h2>User Information</h2>
+        <p><u> Required fields are followed by *</u></p>
+        <p>
+          NAME:*<input
+            type="text"
+            name="name"
+            placeholder="Ankur Sharma"
+            required
+          />
+        </p>
+        <fieldset>
+          <legend>Gender*</legend>
+          <p>
+            Male <input type="radio" name="Gender" id="male" required /> Female
+            <input type="radio" name="Gender" id="female" required />
+          </p>
+        </fieldset>
+        <p>
+          Address:
+          <textarea
+            name="address"
+            placeholder="xyz nagar colony,aligarh"
+            id="address"
+            cols="100"
+            rows="6"
+          ></textarea>
+        </p>
+        <p>
+          Email:*
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="xyz@gmail.com"
+            required
+          />
+        </p>
+        <p>
+          Pincode:*
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            placeholder="123456"
+            required
+          />
+        </p>
+        <hr />
+        <h2>Payment Information*</h2>
+        <p>
+          Card type:*
+          <select name="card_type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="visa">visa</option>
+            <option value="rupay">rupay</option>
+            <option value="mastercard">mastercard</option>
+          </select>
+        </p>
+        <p>
+          Card number:*
+          <input
+            type="number"
+            name="card_number"
+            id="card_number"
+            placeholder="1111-2222-3333-4444"
+            required
+          />
+        </p>
+        <p>
+          Expiration Date:*
+          <input type="date" name="exp_date" id="exp_date" required />
+        </p>
+        <p>
+          CVV:*
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            placeholder="123"
+            required
+          />
+        </p>
+        <input type="submit" value="Pay Now" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: minmax(100px, auto);
+        grid-auto-columns: minmax(200px, auto);
+      }
+      .items {
+        background-color: yellow;
+        border: 4px solid white;
+        border-radius: 4px;
+      }
+      #parts {
+        display: grid;
+        grid-template-rows: repeat(3);
+      }
+      .dabba {
+        border: 4px solid white;
+        border-radius: 4px;
+        background-color: yellow;
+      }
+      #sub-parts {
+        display: grid;
+        grid-template-columns: repeat(2);
+      }
+      .d2 {
+        border: 4px solid white;
+        border-radius: 4px;
+        background-color: yellow;
+      }
+      #a1 {
+        grid-row-start: 1;
+        grid-row-end: 8;
+      }
+      #parts {
+        grid-row-start: 1;
+        grid-row-end: 8;
+        grid-column-start: 2;
+        grid-column-end: 8;
+      }
+      #a4 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 8;
+      }
+      #sub-parts {
+        grid-row-start: 2;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 8;
+      }
+      #a2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+      #a3 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+      }
+      #a5 {
+        grid-row-start: 7;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items" id="a1">Nav</div>
+      <div class="items" id="parts">
+        <div class="dabba" id="a4">Header</div>
+        <div class="dabba" id="sub-parts">
+          <div class="d2" id="a2">Article</div>
+          <div class="d2" id="a3">Adds</div>
+        </div>
+        <div class="dabba" id="a5">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>

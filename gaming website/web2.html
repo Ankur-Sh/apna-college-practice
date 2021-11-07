@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/avengers.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/avengers.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/avengers.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="manifest" href="fav/avengers.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      list-style: none;
+    }
+    body {
+      margin: 0;
+    }
+    /* header {
+              background-color: tomato;
+              padding: 50px;
+            }
+            h1 {
+              color: white;
+              text-align: center;
+              font-size: 40px;
+            }*/
+   footer , nav {
+      display: flex;
+      background-color: rgb(224, 219, 219);
+    }
+    .menu_button:hover {
+      background-color: black;
+      color: wheat;
+    }
+    h2,
+    h4 {
+      text-align: center;
+    }
+    iframe {
+      margin: 40px;
+    }
+    
+    .a1 {
+     
+      color: rgb(160, 84, 170);
+    }
+    .a2 {
+     
+      color: rgb(160, 84, 170);
+    }
+    .a3 {
+      
+      color: rgb(160, 84, 170);
+    }
+    p {
+      margin: 100px;
+    }
+    .shape {
+     clip-path: circle(50% at 50% 50%);
+    }
+    .banner {
+      background-image: url(fav/avengers\ gif.gif);
+      height: 20vw;
+      min-height: 200px;
+      background-attachment: fixed;
+    }
+    .flex-item-right {
+      margin-left: auto;
+    }
+  nav a {
+      float: left;
+      padding: 14px 20px;
+    }
+.shape{
+  width: 360px;
+  margin-left: 490px;
+}
+    .carousel-cell {
+      width: 66%;
+
+      margin-right: 10px;
+
+      border-radius: 5px;
+    }
+    .carousel-cell iframe {
+      width: 800px;
+      height: 500px;
+    }
+    span {
+      background: rgb(34, 193, 195);
+      background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(234, 45, 253, 1) 100%
+      );
+      padding: 10px 55px;
+      color: white;
+      border-radius: 20px;
+    }
+    .carousel-cell2 {
+    width: 66%;
+
+      margin-right: 10px;
+
+      border-radius: 5px;
+      
+    }
+    .name{
+      font-size: 2em;
+      font-weight: 900;
+      letter-spacing: 4px;
+      word-spacing: 10px;
+      text-transform: uppercase;
+      margin: 20px 0px 30px 0px;
+    }
+    .social a{
+      background-color: rgb(125 125 125 /25%);
+      padding: 10px 15px;
+      border-radius: 30px;
+      margin: 5px 10px;
+      text-decoration: none;
+    }
+    .social{
+      margin-left: 360px;
+    }
+    .social a:hover{
+      background-color: rgb(30 30 30 /25%);
+    }
+    .social a i{
+      margin: 5px;
+    }
+    .youtube{
+      color: #FF0000;
+    }
+    .linkedin{
+      color:  #0077b5;
+    }
+    .insta{
+      color:#bc2a8d;
+    }
+    .a1,.a2,.a3{text-align: center;}
+    footer a{padding-left: 20px;
+    text-decoration: none;}
+    @media screen and (max-width: 950px) {
+     footer , nav {
+        flex-direction: column;
+      }
+      .flex-item-right {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <!-- <h1>AVENGERS</h1>-->
+      <div class="banner"></div>
+    </header>
+    <nav>
+      <a class="menu_button" href="">Home</a>
+      <a class="menu_button" href="">Review</a>
+      <a class="menu_button" href="">Team</a>
+      <a class="menu_button flex-item-right" href="">Login/Signup</a>
+    </nav>
+    <h2><span> UPCOMING MOVIES </span></h2>
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell">
+        <iframe
+          src="https://www.youtube.com/embed/8YjFbMbfXaQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe
+          src="https://www.youtube.com/embed/x_me3xsvDgk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe
+          src="https://www.youtube.com/embed/rt-2cxAiPJk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div></div>
+
+    <hr />
+    <h2><span> CAST </span></h2>
+    <div class="img">
+      <div class="img1">
+         <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell2">
+        <img
+          src="C:\Users\arvind\Desktop\coding\gaming website\captain america.jpg"
+          alt=""
+        />
+        <h3 class="a1">CAPTAIN-AMERICA</h3>
+      </div>
+      <div class="img2"> 
+        <img
+          src="C:\Users\arvind\Desktop\coding\gaming website\thanos.jpg"
+          alt=""
+        />
+        <h3 class="a2">THANOS</h3>
+      </div>
+      <div class="img3">
+         
+        <img
+          src="C:\Users\arvind\Desktop\coding\gaming website\iron man.jpg"
+          alt=""
+        />
+        <h3 class="a2">IRON-MAN</h3>
+      </div>
+      <div class="img4">
+         
+        <img
+          src="C:\Users\arvind\Desktop\coding\gaming website\thor.jpg"
+          alt=""
+        />
+        <h3 class="a2">THOR</h3>
+      </div>
+      <div class="img5">
+        
+        <img
+          src="C:\Users\arvind\Desktop\coding\gaming website\dr.strange.jpg"
+          alt=""
+        />
+        <h3 class="a3">DR.STRANGE</h3>
+      </div>
+      <div class="img6">
+         
+        <img
+          src="C:\Users\arvind\Desktop\coding\gaming website\hulk.jpg"
+          alt=""
+        />
+        <h3 class="a2">HULK</h3>
+      </div>
+      <div class="img7">
+        
+      
+        <img
+          src="C:\Users\arvind\Desktop\coding\gaming website\spiderman.jpg"
+          alt=""
+        />
+        <h3 class="a3">SPIDERMAN</h3>
+      </div></div>
+    </div>
+    <hr />
+    
+    <h2><span> OUR-FOUNDER </span></h2>
+    <img
+      src="C:\Users\arvind\Desktop\coding\ankur.jpeg"
+      alt="img"
+      class="shape"
+    />
+
+    <h4 class="name">ANKUR_SHARMA</h4>
+    <div class="social">
+      <a href="" class="fa-lg youtube"><i class="fa fa-youtube" aria-hidden="true"></i>YouTube</a>
+      <a href="" class="fa-lg  linkedin"> <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+      <a href="" class="fa-lg  insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+      </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa placeat
+      earum minima dolore possimus optio dolorem consequuntur quisquam eligendi
+      harum, pariatur illo, velit provident quis reiciendis nihil error autem
+      mollitia ab! Soluta officia neque quasi odio facere harum nulla sit,
+      consectetur aliquid voluptatibus fugit maxime eligendi veritatis quas est
+      nesciunt.
+    </p>
+    <footer>
+      <a href="" class="menu_button ">FAQ</a>
+      <a href="" class="menu_button ">PRIVACY POLICY</a>
+      <a href="" class="menu_button ">REFUND POLICY</a>
+      <a href="" class="menu_button ">TERMS OF USE</a>
+      <a href="" class="menu_button flex-item-right "> CONTACT US</a>
+    </footer>
+ <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+  </body>
+</html>

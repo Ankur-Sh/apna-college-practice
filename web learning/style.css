@@ -1,0 +1,51 @@
+h1,
+h2 {
+  color: blue;
+}
+p::first-line {
+  color: brown;
+}
+p {
+  color: chartreuse;
+}
+
+ul {
+  list-style-type: square;
+}
+.special {
+  color: orange;
+  font-weight: bold;
+}
+sup.special {
+  color: red;
+  font-weight: bold;
+}
+h2 em {
+  color: yellow;
+  font-weight: bold;
+}
+hr + h2 {
+  color: violet;
+}
+a:hover {
+  color: teal;
+}
+a {
+  color: red;
+}
+body h6 + p .special {
+  color: pink;
+  background-color: black;
+  padding: 1px;
+}
+#heading4 {
+  color: brown;
+  background-color: black;
+}
+li[class~="a"] {
+  color: navy;
+}
+table {
+  font-size: large;
+  font-weight: bold;
+}

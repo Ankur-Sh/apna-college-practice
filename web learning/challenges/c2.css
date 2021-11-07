@@ -1,0 +1,85 @@
+x* {
+  box-sizing: border-box;
+}
+.heading {
+  text-align: center;
+  margin: 10px;
+  color: green;
+}
+#main {
+  text-align: center;
+}
+.box1 {
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+  border: 10%;
+  border-radius: 20px;
+  color: red;
+  background-color: grey;
+  float: left;
+}
+.box2 {
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+  border: 10%;
+  border-radius: 20px;
+  color: red;
+  background-color: rgba(128, 128, 128, 0.63);
+  float: left;
+}
+.box3 {
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+  border: 10%;
+  border-radius: 20px;
+  color: red;
+  background-color: hsla(0, 0%, 50%, 0.301);
+  float: left;
+}
+.box4 {
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+  border: 10%;
+  border-radius: 20px;
+  color: red;
+  background-color: #8080801c;
+  float: left;
+}
+@media all and (max-width: 520px) and (min-width: 321px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    align-content: center;
+    width: 35%;
+    padding: 15px;
+    float: left;
+    overflow: hidden;
+  }
+}
+@media all and (max-width: 320px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 65%;
+    padding: 25px;
+    float: left;
+    overflow: hidden;
+  }
+}
+@media all and (min-width: 521px) and (max-width: 999px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 20%;
+    padding: 5px;
+    float: left;
+    overflow: hidden;
+  }
+}
